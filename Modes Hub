@@ -2,7 +2,7 @@ local player = game.Players.LocalPlayer
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Guest's Doors Modes Script", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Guest's Doors Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 --[[
 Name = <string> - The name of the UI.
@@ -138,6 +138,290 @@ Tab:AddButton({
 	Name = "Mayhem Mode",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darker-TheDarkestGuy/Modes/refs/heads/main/Mayhem%20Mode"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "Scripts",
+	Icon = "rbxassetid://10838458392",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Section = Tab:AddSection({
+	Name = "LocalPlayer 2"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Bottle Of Moonlight",
+	Callback = function()
+      		loadstring(game:HttpGet('https://gist.githubusercontent.com/IdkMyNameLoll/04d7dd5e02688624b958b8c2604b924c/raw/9e86b34249f44ed2dd433176e67daaf3db30cde8/MoonBottle'))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Bottle Of Spirallight",
+	Callback = function()
+      		loadstring(game:HttpGet('https://gist.githubusercontent.com/IdkMyNameLoll/8b05c837bea9effac2554340465b4be1/raw/3f3be0ee72e7f153db39a16a40fa63dce6cde72d/SpiralBottle'))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Barrel Of Starlight",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/refs/heads/main/StarJug.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Crucifix On Anything (Click Q To Crucifix)",
+	Callback = function()
+      		_G.Uses = 414141414141
+_G.Range = 30
+_G.OnAnything = true
+_G.Fail = false
+_G.Variant = "Electric"
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Black Hole On Anything",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Black%20Hole.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Shears On Anything",
+	Callback = function()
+      		-- Spawner Customizations --
+_G.Luck = 100 -- The chance of shears spawning in the game
+_G.Spawns = false -- If the shears can spawn naturally in the game
+-- Tool Customizations --
+_G.Durability = 5 -- How much durability it will have until it breaks
+_G.MaxDurability = 5 -- The max durability if you enable regeneration
+_G.InfiniteUses = false -- If The Shears have infinite uses and cannot break
+_G.DurabilityTakenEachSnip = 0.25 -- How much each snip you take with the shears takes from the durability
+_G.SnipSpeed = 1.25 -- The speed of the snipping
+-- Regeneration --
+_G.Regens = true -- If the shears regenerate after being used
+_G.RegenSpeed = 1 -- How fast the shears will regenerate after being used
+_G.RegenAmount = 0.1 -- How much durability it will regenerate after the chosen amount of time
+-- Loadstring --
+loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Buffed%20Shears%20On%20Everything.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Seek Gun On Anything",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/seekgun.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Scanner",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/Scanner.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Speedrun Timer",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Iliankytb/Iliankytb/main/SpeedrunTimer"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Starlight Gummy Flashlight",
+	Callback = function()
+      		loadstring(game:HttpGet(("https://raw.githubusercontent.com/aadyian9000/the-thing/main/GoldenGummyFlashlight.lua"),true))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Moonlight Gummy Flashlight",
+	Callback = function()
+      		_G.Model = Guiding
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Matthew201322/Doors-Scriptee/refs/heads/main/Shakelight.luau", true))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Gravity Gun",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Skibiditoiletscripts/e/refs/heads/main/gravity%20gun'),true))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Immortal Snail",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAcceleration/Comet-Development/refs/heads/main/Doors/Game/Immortal%20Snail.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Holy Grenade On Anything",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darker-TheDarkestGuy/Modes/refs/heads/main/Holy%20Hand%20Grenade%20On%20Anything"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Grenade On Anything",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darker-TheDarkestGuy/Modes/refs/heads/main/Grenade%20On%20Anything"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Seek Plushie",
+	Callback = function()
+      		local plr = game.Players.LocalPlayer
+local hum = plr.Character:WaitForChild("Humanoid")
+
+local plush = game:GetObjects("rbxassetid://13613269677")[1]
+plush.Parent = plr.Backpack
+local anim = hum:LoadAnimation(plush.A.Hold)
+
+plush.Equipped:Connect(function()
+  anim:Play()
+end)
+plush.Unequipped:Connect(function()
+  anim:Stop()
+end)
+
+plush.Activated:Connect(function()
+  plush.Toy:Play()
+end)
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Grumble Chaser (Click Q To Spawn Grumble)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxScriptFY/Grumble/refs/heads/main/.GrumbleChaser"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Rocket Launcher",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/rocketLauncher.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Resizer",
+	Callback = function()
+      		loadstring(game:HttpGet('https://gist.githubusercontent.com/IdkMyNameLoll/f0178af2301ca90c09895f10f3e7bd4b/raw/46899ccc3626f3485d85f990012f7ef37ae52e5e/resizerDoorsRemake'))()
   	end    
 })
 
