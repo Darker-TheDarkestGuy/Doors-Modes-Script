@@ -2,7 +2,7 @@ local player = game.Players.LocalPlayer
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Guest's Doors Modes Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Guest's Doors Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 --[[
 Name = <string> - The name of the UI.
@@ -506,6 +506,18 @@ Tab:AddButton({
 	Name = "Pink Scanner",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Matthew201322/Doors-Scriptee/refs/heads/main/the%20tablet.luau"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Golden Scanner",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darker-TheDarkestGuy/Modes/refs/heads/main/Golden%20Scanner"))()
   	end    
 })
 
